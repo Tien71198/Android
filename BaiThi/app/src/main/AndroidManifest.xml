@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ThanhToanActivity"></activity>
+        <activity android:name=".XacNhanDatPhongActivity"></activity>
+        <activity android:name=".ThanhToanActivity" />
         <activity android:name=".PhongDaActivity" />
         <activity android:name=".PhongDoiActivity" />
         <activity android:name=".PhongDonActivity" />

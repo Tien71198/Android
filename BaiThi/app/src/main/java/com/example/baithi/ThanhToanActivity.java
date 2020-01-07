@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class ThanhToanActivity extends AppCompatActivity {
 
-    Button btnQL, btnTinhtien;
+    Button btnQL, btnTinhtien, btnXacNhanDP;
     EditText loaiphong, sophongdat, ngayo, dem;
     TextView tinhtien;
     @Override
@@ -20,6 +20,7 @@ public class ThanhToanActivity extends AppCompatActivity {
         setContentView(R.layout.activity_thanh_toan);
         btnQL = (Button) findViewById(R.id.quaylai);
         btnTinhtien = (Button) findViewById(R.id.bttien);
+        btnXacNhanDP = (Button) findViewById(R.id.btxndp);
         loaiphong = (EditText) findViewById(R.id.edloaiphong);
         sophongdat = (EditText) findViewById(R.id.edsophong);
         ngayo = (EditText) findViewById(R.id.edngayo);
@@ -73,6 +74,13 @@ public class ThanhToanActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+        btnXacNhanDP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent xn = new Intent(ThanhToanActivity.this,XacNhanDatPhongActivity.class);
+                startActivity(xn);
             }
         });
 

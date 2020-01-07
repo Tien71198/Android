@@ -30,7 +30,7 @@
             android:layout_weight="1"
             android:text="HomeStay"
             android:textColor="#DB0720"
-            android:textSize="30dp" />
+            android:textSize="25dp" />
     </LinearLayout>
         <ImageView
             android:layout_weight="0"
